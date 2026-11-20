@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Thursday 19 November 2026 — One Day of World News, One Picture</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; overflow: hidden; }
+  body {
+    background: #f4efe4;
+    font-family: "Liberation Sans", Arial, sans-serif;
+    color: #1c1c1c;
+    padding: 10px;
+  }
+  .card { background: #fff; border: 1px solid #e3d9c6; border-radius: 4px; overflow: hidden; }
+  .art { position: relative; display: block; }
+  .art svg { display: block; width: 100%; height: 100%; }
+  .meta { font-size: 10px; font-weight: 700; letter-spacing: .3px; }
+  .status { font-size: 9px; font-weight: 700; letter-spacing: .3px; }
+  .status.conf { color: #0F2A44; }
+  .status.claim { color: #8f1d2c; }
+  /* Top line */
+  .topline {
+    height: 28px; display: flex; justify-content: space-between; align-items: center;
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    border-bottom: 2px solid #1c1c1c; margin-bottom: 14px;
+  }
+  /* Date */
+  .date {
+    height: 62px; display: flex; align-items: center; justify-content: center;
+    font-family: "Liberation Serif", Georgia, serif; font-size: 44px; font-weight: 700;
+    margin-bottom: 14px;
+  }
+  /* Timeline */
+  .timeline { height: 46px; display: flex; gap: 6px; margin-bottom: 14px; }
+  .tl-label {
+    width: 104px; flex: none; display: flex; align-items: center; justify-content: center;
+    background: #1c1c1c; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .8px;
+    border-radius: 4px; text-align: center;
+  }
+  .tl-slot {
+    flex: 1; background: #fff; border: 1px solid #e3d9c6; border-radius: 4px;
+    padding: 5px 8px; overflow: hidden;
+  }
+  .tl-slot b { display: block; font-size: 10px; }
+  .tl-slot span { display: block; font-size: 10px; }
+  .tl-slot.future { background: #f4efe4; border: 1px dashed #6b6560; color: #6b6560; }
+  /* Leads */
+  .leads { height: 156px; display: flex; gap: 8px; margin-bottom: 14px; }
+  .leads .card { flex: 1; }
+  .leads .art { height: 42px; }
+  .leads .txt { padding: 5px 8px 4px; }
+  .leads h2 { font-family: "Liberation Serif", Georgia, serif; font-size: 14px; line-height: 1.15; margin: 2px 0; }
+  .leads p { font-size: 9px; line-height: 1.35; color: #333; }
+  /* Eight cards */
+  .cards { height: 208px; display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .cards .card { width: 242px; height: 100px; }
+  .cards .art { height: 26px; }
+  .cards .txt { padding: 3px 6px 2px; }
+  .cards .meta { font-size: 8.5px; }
+  .cards .status { font-size: 8.5px; }
+  .cards h2 { font-family: "Liberation Serif", Georgia, serif; font-size: 11px; line-height: 1.15; margin: 1px 0; }
+  .cards p { font-size: 9px; line-height: 1.3; color: #333; }
+  /* Bottom band */
+  .bottom { height: 310px; display: flex; gap: 8px; margin-bottom: 14px; }
+  .mapbox { width: 280px; flex: none; }
+  .mapbox h3, .alsobox h3 { text-align: center; font-size: 10px; letter-spacing: 1px; padding: 6px 0 2px; }
+  .mapbox svg { display: block; margin: 0 auto; }
+  .legend { display: flex; flex-wrap: wrap; gap: 2px 10px; padding: 4px 10px 6px; font-size: 9px; }
+  .legend span { display: flex; align-items: center; gap: 4px; }
+  .legend i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  .alsobox { flex: 1; }
+  .alsobox ul { list-style: none; padding: 2px 12px 0; }
+  .alsobox li { font-size: 10px; line-height: 1.4; margin-bottom: 5px; }
+  .alsobox li b { color: #1c1c1c; }
+  .alsobox li .n { color: #8f1d2c; font-weight: 700; margin-right: 4px; }
+  /* Date check */
+  .datecheck {
+    height: 72px; background: #f8e8e6; border: 1.5px solid #8f1d2c; border-radius: 4px;
+    padding: 7px 10px; font-size: 9.5px; line-height: 1.35; margin-bottom: 14px; overflow: hidden;
+  }
+  .datecheck b { color: #8f1d2c; }
+  /* Footer */
+  .foot {
+    height: 22px; display: flex; justify-content: space-between; align-items: center;
+    font-size: 9px; border-top: 1px solid #e3d9c6; padding-top: 4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="topline">
+  <span>ONE DAY OF WORLD NEWS, ONE PICTURE</span>
+  <span>26 STORIES · 7 REGIONS · EVERY ONE FROM THIS THURSDAY</span>
+</div>
+
+<div class="date">Thursday 19 November 2026</div>
+
+<div class="timeline">
+  <div class="tl-label">THE DAY IN UTC</div>
+  <div class="tl-slot"><b>00:49 UTC</b><span>Kerch Bridge hit</span></div>
+  <div class="tl-slot"><b>Midday</b><span>ICJ verdict</span></div>
+  <div class="tl-slot"><b>Thursday</b><span>Shenzhen summit</span></div>
+  <div class="tl-slot"><b>Before noon, New York</b><span>Anthropic opens</span></div>
+  <div class="tl-slot future"><b>Friday, not yet</b><span>Akvan landfall</span></div>
+</div>
+
+<div class="leads">
+  <div class="card">
+    <div class="art">
+      <svg viewBox="0 0 245 44" preserveAspectRatio="xMidYMid slice">
+        <rect width="245" height="44" fill="#EDE7D6"/>
+        <g><rect x="10" y="3" width="52" height="22" fill="#fff"/><rect x="10" y="3" width="52" height="3" fill="#B22222"/><rect x="10" y="9" width="52" height="3" fill="#B22222"/><rect x="10" y="15" width="52" height="3" fill="#B22222"/><rect x="10" y="3" width="22" height="11" fill="#1E3C78"/></g>
+        <g><rect x="96" y="3" width="52" height="22" fill="#DE2910"/><circle cx="108" cy="11" r="5" fill="#FFDC00"/></g>
+        <g><rect x="182" y="3" width="52" height="22" fill="#fff"/><rect x="182" y="10" width="52" height="7" fill="#0039A6"/><rect x="182" y="17" width="52" height="8" fill="#D50000"/></g>
+        <rect x="8" y="29" width="229" height="4" fill="#784820"/>
+        <text x="122" y="42" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="9" font-weight="bold" letter-spacing="2" fill="#0F2A44">SHENZHEN</text>
+      </svg>
+    </div>
+    <div class="txt">
+      <div class="meta">1 · ASIA · DIPLOMACY</div>
+      <div class="status conf">CONFIRMED · WHITE HOUSE</div>
+      <h2>Trump, Xi and Putin hold a first summit in Shenzhen</h2>
+      <p>A 90-minute APEC meeting at Kylin Villa ends with a Declaration toward Peace. It does not mention Ukraine or Iran.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="art">
+      <svg viewBox="0 0 245 44" preserveAspectRatio="xMidYMid slice">
+        <rect width="245" height="44" fill="#EAF0F5"/>
+        <line x1="122" y1="4" x2="122" y2="32" stroke="#C9A227" stroke-width="3"/>
+        <line x1="72" y1="10" x2="172" y2="10" stroke="#C9A227" stroke-width="3"/>
+        <line x1="72" y1="10" x2="58" y2="24" stroke="#C9A227" stroke-width="1.5"/>
+        <line x1="72" y1="10" x2="86" y2="24" stroke="#C9A227" stroke-width="1.5"/>
+        <path d="M58 20 a14 14 0 0 0 28 0 z" fill="#C9A227"/>
+        <line x1="172" y1="10" x2="158" y2="24" stroke="#C9A227" stroke-width="1.5"/>
+        <line x1="172" y1="10" x2="186" y2="24" stroke="#C9A227" stroke-width="1.5"/>
+        <path d="M158 20 a14 14 0 0 0 28 0 z" fill="#C9A227"/>
+        <rect x="102" y="32" width="40" height="3" fill="#C9A227"/>
+        <text x="122" y="42" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="9" font-weight="bold" letter-spacing="2" fill="#0F2A44">THE HAGUE</text>
+      </svg>
+    </div>
+    <div class="txt">
+      <div class="meta">2 · THE HAGUE · JUSTICE</div>
+      <div class="status conf">CONFIRMED · ICJ</div>
+      <h2>World Court: Myanmar committed genocide against the Rohingya</h2>
+      <p>First time the ICJ has found a state responsible for genocide. The case is The Gambia v. Myanmar, on the 2017 Rakhine campaign.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="art">
+      <svg viewBox="0 0 245 44" preserveAspectRatio="xMidYMid slice">
+        <rect width="245" height="44" fill="#DCEBF5"/>
+        <rect y="30" width="245" height="14" fill="#B4DCF0"/>
+        <rect x="10" y="16" width="96" height="5" fill="#3C3C3C"/>
+        <rect x="140" y="16" width="95" height="5" fill="#3C3C3C"/>
+        <polygon points="106,16 122,32 140,16" fill="#3C3C3C"/>
+        <circle cx="118" cy="8" r="5" fill="#9A9A9A"/><circle cx="130" cy="6" r="6" fill="#B4B4B4"/>
+        <rect x="40" y="10" width="22" height="6" fill="#B22222"/>
+        <text x="122" y="42" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="9" font-weight="bold" letter-spacing="2" fill="#0F2A44">KERCH</text>
+      </svg>
+    </div>
+    <div class="txt">
+      <div class="meta">3 · EUROPE · UKRAINE WAR</div>
+      <div class="status conf">CONFIRMED · GUARDIAN</div>
+      <h2>Ukraine hits the Kerch Bridge for a third time in a week</h2>
+      <p>Putin promises a painful response.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="art">
+      <svg viewBox="0 0 245 44" preserveAspectRatio="xMidYMid slice">
+        <rect width="245" height="44" fill="#EBF5EB"/>
+        <line x1="10" y1="8" x2="10" y2="32" stroke="#0F2A44" stroke-width="1.5"/>
+        <line x1="10" y1="32" x2="235" y2="32" stroke="#0F2A44" stroke-width="1.5"/>
+        <polyline points="14,28 60,24 105,8 150,16 195,26 232,30" fill="none" stroke="#2E7D32" stroke-width="2.5"/>
+        <circle cx="105" cy="8" r="3.5" fill="#2E7D32"/>
+        <text x="112" y="18" font-family="Liberation Sans, Arial" font-size="9" font-weight="bold" fill="#2E7D32">ANT</text>
+        <text x="122" y="42" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="9" font-weight="bold" letter-spacing="2" fill="#0F2A44">NASDAQ</text>
+      </svg>
+    </div>
+    <div class="txt">
+      <div class="meta">4 · US · MARKETS</div>
+      <div class="status conf">CONFIRMED · AP</div>
+      <h2>Anthropic opens on Nasdaq in the largest IPO on record</h2>
+      <p>Ticker ANT. Priced Wednesday at $83, raising $81.3 billion. Opened Thursday at $111.50 and closed at $97.17, up 17% from the offer price. Stocks fell as it opened.</p>
+    </div>
+  </div>
+</div>
+
+<div class="cards">
+  <div class="card">
+    <div class="art">
+      <svg viewBox="0 0 245 26" preserveAspectRatio="xMidYMid slice">
+        <rect width="245" height="26" fill="#E8DCC8"/>
+        <rect y="16" width="245" height="3" fill="#E8C45A"/>
+        <rect y="19" width="245" height="7" fill="#C8B898"/>
+        <rect x="100" y="8" width="42" height="8" fill="#3C3C3C"/><rect x="112" y="3" width="18" height="6" fill="#3C3C3C"/>
+        <line x1="130" y1="6" x2="148" y2="6" stroke="#3C3C3C" stroke-width="2"/>
+        <rect x="4" y="3" width="36" height="11" fill="#0F2A44"/><text x="22" y="11" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="8" font-weight="bold" fill="#fff">GAZA</text>
+      </svg>
+    </div>
+    <div class="txt">
+      <div class="meta">5 · MIDDLE EAST · GAZA</div>
+      <div class="status conf">CONFIRMED · GUARDIAN</div>
+      <h2>Israeli tanks cross the yellow line into central Gaza</h2>
+      <p>Tanks move into the Hamas-controlled side of the line.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="art">
+      <svg viewBox="0 0 245 26" preserveAspectRatio="xMidYMid slice">
+        <rect width="245" height="26" fill="#DCEBF5"/>
+        <rect y="22" width="245" height="4" fill="#C8D2DC"/>
+        <rect x="110" y="2" width="24" height="20" fill="#5A6E8C"/>
+        <rect x="114" y="6" width="16" height="3" fill="#E8C45A"/><rect x="114" y="12" width="16" height="3" fill="#E8C45A"/><rect x="114" y="18" width="16" height="3" fill="#E8C45A"/>
+        <circle cx="160" cy="7" r="5" fill="#E8C45A"/>
+        <rect x="4" y="3" width="44" height="11" fill="#0F2A44"/><text x="26" y="11" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="8" font-weight="bold" fill="#fff">RIYADH</text>
+      </svg>
+    </div>
+    <div class="txt">
+      <div class="meta">6 · MIDDLE EAST · RIYADH</div>
+      <div class="status conf">CONFIRMED · SAUDI ACCOUNT</div>
+      <h2>Saudi Arabia says a Houthi missile damaged the PIF tower</h2>
+      <p>The strike hit the kingdom&rsquo;s tallest tower, the Public Investment Fund headquarters.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="art">
+      <svg viewBox="0 0 245 26" preserveAspectRatio="xMidYMid slice">
+        <rect width="245" height="26" fill="#FFD9A8"/>
+        <rect y="14" width="245" height="12" fill="#0E3A5A"/>
+        <polygon points="96,14 150,14 142,22 104,22" fill="#191920"/>
+        <rect x="108" y="6" width="18" height="8" fill="#C83C28"/>
+        <polygon points="160,14 205,14 197,22 168,22" fill="#191920"/>
+        <rect x="172" y="6" width="18" height="8" fill="#286EA0"/>
+        <polygon points="112,6 117,0 122,6" fill="#E8621B"/><polygon points="176,6 181,0 186,6" fill="#E8621B"/>
+        <rect x="4" y="3" width="48" height="11" fill="#0F2A44"/><text x="28" y="11" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="8" font-weight="bold" fill="#fff">HORMUZ</text>
+      </svg>
+    </div>
+    <div class="txt">
+      <div class="meta">7 · MIDDLE EAST · HORMUZ</div>
+      <div class="status claim">CLAIM · IRGC</div>
+      <h2>Iran&rsquo;s Guards say two supertankers caught fire in the Strait of Hormuz</h2>
+      <p>The Guards say the ships hit mines. This is one side&rsquo;s account.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="art">
+      <svg viewBox="0 0 245 26" preserveAspectRatio="xMidYMid slice">
+        <rect width="245" height="26" fill="#E1EBF5"/>
+        <rect y="20" width="245" height="6" fill="#C8D2DC"/>
+        <rect x="100" y="4" width="30" height="16" fill="#C8102E"/>
+        <rect x="111" y="4" width="6" height="16" fill="#fff"/><rect x="100" y="10" width="30" height="4" fill="#fff"/>
+        <rect x="150" y="6" width="46" height="14" fill="#DCC8AA"/><rect x="156" y="10" width="8" height="10" fill="#0F2A44"/><rect x="182" y="10" width="8" height="10" fill="#0F2A44"/>
+        <rect x="4" y="3" width="72" height="11" fill="#0F2A44"/><text x="40" y="11" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="8" font-weight="bold" fill="#fff">COPENHAGEN</text>
+      </svg>
+    </div>
+    <div class="txt">
+      <div class="meta">8 · EUROPE · ARCTIC</div>
+      <div class="status conf">CONFIRMED · GUARDIAN</div>
+      <h2>Danish parliament approves a US&ndash;Greenland security pact</h2>
+      <p>Lawmakers passed the pact on Thursday.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="art">
+      <svg viewBox="0 0 245 26" preserveAspectRatio="xMidYMid slice">
+        <rect width="245" height="26" fill="#F5E1D2"/>
+        <rect y="18" width="245" height="8" fill="#8A7A62"/>
+        <circle cx="100" cy="12" r="4" fill="#E8BE96"/><circle cx="116" cy="12" r="4" fill="#E8BE96"/><circle cx="132" cy="12" r="4" fill="#E8BE96"/>
+        <rect x="150" y="2" width="4" height="16" fill="#5A3C1E"/><rect x="154" y="2" width="26" height="10" fill="#fff" stroke="#0F2A44"/>
+        <rect x="4" y="3" width="38" height="11" fill="#0F2A44"/><text x="23" y="11" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="8" font-weight="bold" fill="#fff">DHAKA</text>
+      </svg>
+    </div>
+    <div class="txt">
+      <div class="meta">9 · ASIA · BANGLADESH</div>
+      <div class="status conf">CONFIRMED · GUARDIAN</div>
+      <h2>Bangladesh sees violent protests ahead of Hasina&rsquo;s planned return</h2>
+      <p>Protests and killings come before the exiled former leader&rsquo;s planned return.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="art">
+      <svg viewBox="0 0 245 26" preserveAspectRatio="xMidYMid slice">
+        <rect width="245" height="26" fill="#DCF0EB"/>
+        <circle cx="122" cy="13" r="10" fill="none" stroke="#286EB4" stroke-width="2"/>
+        <circle cx="122" cy="13" r="5" fill="none" stroke="#286EB4" stroke-width="2"/>
+        <circle cx="122" cy="13" r="1.5" fill="#286EB4"/>
+        <rect x="4" y="3" width="42" height="11" fill="#0F2A44"/><text x="25" y="11" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="8" font-weight="bold" fill="#fff">ODISHA</text>
+      </svg>
+    </div>
+    <div class="txt">
+      <div class="meta">10 · ASIA · INDIA</div>
+      <div class="status conf">CONFIRMED · THE HINDU</div>
+      <h2>Odisha moves more than 100,000 people as Cyclone Akvan nears</h2>
+      <p>Landfall is expected Friday at noon, just east of Gopalpur. It has not landed.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="art">
+      <svg viewBox="0 0 245 26" preserveAspectRatio="xMidYMid slice">
+        <rect width="245" height="26" fill="#EBF0FA"/>
+        <g><rect x="96" y="4" width="34" height="18" fill="#1E3C78"/><circle cx="113" cy="13" r="4" fill="#fff"/></g>
+        <g><rect x="140" y="4" width="34" height="18" fill="#fff"/><rect x="140" y="10" width="34" height="6" fill="#0039A6"/><rect x="140" y="16" width="34" height="6" fill="#D50000"/></g>
+        <rect x="90" y="22" width="90" height="3" fill="#784820"/>
+        <rect x="4" y="3" width="34" height="11" fill="#0F2A44"/><text x="21" y="11" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="8" font-weight="bold" fill="#fff">APEC</text>
+      </svg>
+    </div>
+    <div class="txt">
+      <div class="meta">11 · ASIA · APEC</div>
+      <div class="status conf">CONFIRMED · GUARDIAN</div>
+      <h2>Albanese tells Putin, at APEC, to end the Ukraine war</h2>
+      <p>Australia&rsquo;s prime minister says: end the war, end it now.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="art">
+      <svg viewBox="0 0 245 26" preserveAspectRatio="xMidYMid slice">
+        <rect width="245" height="26" fill="#E1EBF5"/>
+        <rect y="22" width="245" height="4" fill="#C8D2DC"/>
+        <rect x="96" y="4" width="52" height="4" fill="#5A5A5A"/>
+        <rect x="100" y="8" width="6" height="14" fill="#5A5A5A"/><rect x="112" y="8" width="6" height="14" fill="#5A5A5A"/>
+        <rect x="124" y="8" width="6" height="14" fill="#5A5A5A"/><rect x="136" y="8" width="6" height="14" fill="#5A5A5A"/>
+        <rect x="4" y="3" width="42" height="11" fill="#0F2A44"/><text x="25" y="11" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="8" font-weight="bold" fill="#fff">BERLIN</text>
+      </svg>
+    </div>
+    <div class="txt">
+      <div class="meta">12 · EUROPE · DIPLOMACY</div>
+      <div class="status conf">CONFIRMED · GUARDIAN</div>
+      <h2>Ukraine&rsquo;s allies warn that a Yalta format will not bring peace</h2>
+      <p>The Berlin meeting follows Trump calling Putin a friend at the Shenzhen summit.</p>
+    </div>
+  </div>
+</div>
+
+<div class="bottom">
+  <div class="card mapbox">
+    <h3>WHERE IT HAPPENED</h3>
+    <svg width="272" height="226" viewBox="0 0 280 210">
+      <rect width="280" height="210" fill="#cfe0ee"/>
+      <!-- North America -->
+      <polygon points="10,30 24,20 45,16 66,18 80,26 94,36 99,48 88,56 82,68 78,80 72,88 60,88 68,97 77,100 70,90 58,82 40,70 22,58 12,44" fill="#E8DCB4" stroke="#B4A582"/>
+      <!-- Greenland -->
+      <polygon points="106,12 118,10 124,20 112,28 104,22" fill="#E8DCB4" stroke="#B4A582"/>
+      <!-- South America -->
+      <polygon points="78,100 88,98 100,102 112,112 116,124 108,140 100,152 92,168 86,160 82,142 78,124 76,110" fill="#E8DCB4" stroke="#B4A582"/>
+      <!-- Europe -->
+      <polygon points="132,66 140,60 146,52 144,44 152,38 158,30 166,24 172,30 168,38 160,44 156,52 150,58 146,64 138,66" fill="#E8DCB4" stroke="#B4A582"/>
+      <!-- United Kingdom -->
+      <polygon points="138,46 142,40 141,34 137,38" fill="#E8DCB4" stroke="#B4A582"/>
+      <!-- Africa -->
+      <polygon points="134,68 146,65 158,67 166,72 174,82 178,94 174,106 166,120 160,134 154,150 146,150 140,136 132,120 124,104 124,88 130,74" fill="#E8DCB4" stroke="#B4A582"/>
+      <!-- Asia: Arabia, India tip, Malay tip, China coast, Siberia -->
+      <polygon points="166,66 170,76 178,86 188,84 196,88 202,96 206,108 211,98 216,106 221,96 226,88 230,78 236,68 244,60 250,52 260,46 269,38 267,28 255,22 238,20 218,22 200,26 186,32 176,44 170,54" fill="#E8DCB4" stroke="#B4A582"/>
+      <!-- Japan -->
+      <polygon points="248,56 254,62 250,70 246,64" fill="#E8DCB4" stroke="#B4A582"/>
+      <!-- Indonesia -->
+      <polygon points="216,108 228,106 240,110 232,116 220,114" fill="#E8DCB4" stroke="#B4A582"/>
+      <!-- Australia -->
+      <polygon points="228,138 244,132 258,136 262,146 252,156 238,154 228,146" fill="#E8DCB4" stroke="#B4A582"/>
+      <g font-family="Liberation Sans, Arial" font-size="8" font-weight="bold" fill="#fff" text-anchor="middle">
+        <circle cx="82" cy="60" r="7" fill="#2e8b57" stroke="#fff" stroke-width="1.5"/><text x="82" y="63">4</text>
+        <circle cx="134" cy="44" r="7" fill="#2f6fed" stroke="#fff" stroke-width="1.5"/><text x="134" y="47">2</text>
+        <circle cx="156" cy="54" r="7" fill="#2f6fed" stroke="#fff" stroke-width="1.5"/><text x="156" y="57">12</text>
+        <circle cx="172" cy="52" r="7" fill="#2f6fed" stroke="#fff" stroke-width="1.5"/><text x="172" y="55">3</text>
+        <circle cx="152" cy="28" r="7" fill="#2f6fed" stroke="#fff" stroke-width="1.5"/><text x="152" y="31">8</text>
+        <circle cx="158" cy="70" r="7" fill="#c0392b" stroke="#fff" stroke-width="1.5"/><text x="158" y="73">5</text>
+        <circle cx="176" cy="86" r="7" fill="#c0392b" stroke="#fff" stroke-width="1.5"/><text x="176" y="89">6</text>
+        <circle cx="192" cy="72" r="7" fill="#c0392b" stroke="#fff" stroke-width="1.5"/><text x="192" y="75">7</text>
+        <circle cx="230" cy="82" r="7" fill="#e07a2f" stroke="#fff" stroke-width="1.5"/><text x="230" y="85">1</text>
+        <circle cx="214" cy="96" r="7" fill="#e07a2f" stroke="#fff" stroke-width="1.5"/><text x="214" y="99">11</text>
+        <circle cx="209" cy="76" r="7" fill="#e07a2f" stroke="#fff" stroke-width="1.5"/><text x="209" y="79">9</text>
+        <circle cx="196" cy="96" r="7" fill="#e07a2f" stroke="#fff" stroke-width="1.5"/><text x="196" y="99">10</text>
+      </g>
+    </svg>
+    <div class="legend">
+      <span><i style="background:#2f6fed"></i>Europe</span>
+      <span><i style="background:#c0392b"></i>Middle East</span>
+      <span><i style="background:#e07a2f"></i>Asia</span>
+      <span><i style="background:#2e8b57"></i>Americas</span>
+      <span><i style="background:#7a4ea3"></i>Africa</span>
+      <span><i style="background:#6b6560"></i>Global</span>
+    </div>
+  </div>
+
+  <div class="card alsobox">
+    <h3>ALSO ON THURSDAY 19 NOVEMBER</h3>
+    <ul>
+      <li><span class="n">13.</span><b>Kushner:</b> Russia is comfortable with NATO-like security guarantees for Ukraine, the US envoy says.</li>
+      <li><span class="n">14.</span><b>Israel:</b> A driver rams a car into Palestinians. Eight people are injured.</li>
+      <li><span class="n">15.</span><b>Tokyo:</b> China gives Japan&rsquo;s prime minister a frosty welcome at APEC.</li>
+      <li><span class="n">16.</span><b>Moscow:</b> Russia asks whether the Netherlands has joined the conflict after the Kerch strike.</li>
+      <li><span class="n">17.</span><b>Delhi:</b> Modi criticises Indian industry at the FICCI meeting on jobs, wages, and quality.</li>
+      <li><span class="n">18.</span><b>Court:</b> India&rsquo;s Supreme Court leaves Azam Khan&rsquo;s interim bail in place.</li>
+      <li><span class="n">19.</span><b>Nadia:</b> Mahua Moitra says her convoy was attacked. <b>CLAIM</b></li>
+      <li><span class="n">20.</span><b>Chennai:</b> TVK legislator V.S. Babu dies at 75.</li>
+      <li><span class="n">21.</span><b>Brent:</b> Oil stays high at $89.59 a barrel.</li>
+      <li><span class="n">22.</span><b>Brussels:</b> The EU proposes a &euro;45B loan to Ukraine.</li>
+      <li><span class="n">23.</span><b>Seoul:</b> South Korea&rsquo;s exports pass $1,000B for the first time.</li>
+      <li><span class="n">24.</span><b>Suva:</b> Fiji declares a national disaster over El Ni&ntilde;o drought.</li>
+      <li><span class="n">25.</span><b>Washington:</b> The Iran war has cost the US about $48.3B, AP reports.</li>
+      <li><span class="n">26.</span><b>Addis Ababa:</b> Ethiopia and Eritrea mass troops along their border.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="datecheck">
+  <b>DATE CHECK</b>&nbsp; Left out on purpose because they broke before Thursday: Iran&rsquo;s strikes on a US base in Kuwait and on Bahrain, which were reported Wednesday. Rahul Gandhi&rsquo;s remarks in Chicago, Wednesday. A US court order to serve summonses on Ajit Doval and Samant Goel, dated 13 November. Anthropic priced its IPO on Wednesday. Thursday is the first day of trading. <b>Not yet:</b> Cyclone Akvan&rsquo;s landfall, expected Friday at noon east of Gopalpur. Pakistan&rsquo;s minister is due in Delhi for an SCO forum from 20 to 22 November.
+</div>
+
+<div class="foot">
+  <span>Every story happened or was first reported on Thursday 19 November 2026. CLAIM means one side&rsquo;s account, not independently confirmed.</span>
+  <span>Sources: White House, ICJ, AP, Reuters, Guardian, The Hindu, UN News.</span>
+</div>
+
+</body>
+</html>
